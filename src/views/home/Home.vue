@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    haha
+
   </div>
 </template>
 
@@ -13,10 +13,11 @@ export default {
 
 <style>
   .home{
-    position: relative;
+    background:url("../../assets/img/home/home.jpg");
+    background-size: 100% 100%;
+    height: 100%;
     width: 100%;
-    background-image: url("../../assets/img/home/home.jpg");
-    background-size: cover;
+    position: fixed;
   }
 
 </style>

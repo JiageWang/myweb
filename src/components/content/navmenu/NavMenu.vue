@@ -37,6 +37,9 @@ export default {
           break;
       }
     }
+  },
+  created() {
+    this.$router.replace({path: "/home"});
   }
 }
 </script>
@@ -45,6 +48,9 @@ export default {
 img {
   height: 50px;
   width: 50px;
+}
+.no-padding{
+  padding-bottom: 0px;
 }
 .el-menu-item{
   font-size: 20px;
