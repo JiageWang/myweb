@@ -1,40 +1,40 @@
 <template>
-  <div class="app">
-    <my-header></my-header>
-    <router-view/>
-    <my-footer></my-footer>
-  </div>
+
+    <nav-menu class="menu"/>
+    <router-view class="main"/>
+
+
+
 
 </template>
 
 <script>
-  import MyHeader from "src/components/MyHeader";
-  import MyFooter from "src/components/MyFooter";
-  import MyMain from "src/components/MyMain";
+
+  import NavMenu from "components/NavMenu";
 
   export default {
     name: "App",
     components: {
-      MyHeader,
-      MyMain,
-      MyFooter
+      NavMenu,
     }
   }
 </script>
 
 
 <style>
-
-#nav {
-  padding-bottom: 0px;
+.menu{
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
+.main{
+  padding-top: 60px;
+  /*设置整个屏幕显示背景*/
+  top:0;
+  right:0;
+  left:0;
+  position:absolute;
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>

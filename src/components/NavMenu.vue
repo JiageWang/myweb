@@ -1,7 +1,7 @@
 <template>
-  <el-header>
+  <el-header class="no-padding">
     <el-menu :default-active="activeIndex" class="d-flex" mode="horizontal" router="true">
-      <el-menu-item class="mr-auto"><img src="~assets/img/navmenu/headimg.jpg"></el-menu-item>
+      <el-menu-item class="mr-auto"><img src="~assets/img/headimg.jpg"></el-menu-item>
       <el-menu-item index="/home">主页</el-menu-item>
       <el-menu-item index="/blog">博客</el-menu-item>
       <el-menu-item index="/life">生活</el-menu-item>
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: "MyHeader",
+  name: "NavMenu",
   data() {
     return {
       activeIndex: '/home',
@@ -29,5 +29,4 @@ img {
   height: 50px;
   width: 50px;
 }
-
 </style>

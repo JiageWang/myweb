@@ -1,6 +1,5 @@
 <template>
-  <el-footer class="my-footer">
-    <div class="my-footer-main">
+  <el-footer class="no-padding">
       <el-row class="my-footer-row">
         <el-col :span="8" class="my-fonter-col">
           <div class="item">
@@ -17,8 +16,6 @@
           </div>
         </el-col>
       </el-row>
-    </div>
-
   </el-footer>
 
 </template>
@@ -30,17 +27,7 @@ export default {
 </script>
 
 <style scoped>
-.f-footer{
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-  background-color: #555;
-}
-.my-footer-main{
-  width: 70%;
-  margin: 0 auto;
-  color: #ccc;
-}
+
 .my-fonter-col{
   text-align: left;
 }
