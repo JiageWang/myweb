@@ -1,17 +1,23 @@
 <template>
-  <div id="nav">
-    <nav-menu/>
+  <div class="app">
+    <my-header></my-header>
+    <router-view/>
+    <my-footer></my-footer>
   </div>
-  <router-view/>
+
 </template>
 
 <script>
-  import NavMenu from "@/components/content/navmenu/NavMenu";
+  import MyHeader from "src/components/MyHeader";
+  import MyFooter from "src/components/MyFooter";
+  import MyMain from "src/components/MyMain";
 
   export default {
     name: "App",
     components: {
-      NavMenu
+      MyHeader,
+      MyMain,
+      MyFooter
     }
   }
 </script>
@@ -31,6 +37,4 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
-
-
 </style>

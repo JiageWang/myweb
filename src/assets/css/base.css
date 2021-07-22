@@ -1,0 +1,16 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+.d-flex{
+  display: flex!important;
+}
+.mr-auto{
+  margin-right: auto!important;
+}
+.ml-auto{
+  margin-left: auto!important;
+}
+.tl-center{
+  text-align: center;
+}

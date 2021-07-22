@@ -13,11 +13,17 @@ export default {
 
 <style>
   .home{
-    background:url("../../assets/img/home/home.jpg");
-    background-size: 100% 100%;
-    height: 100%;
-    width: 100%;
-    position: fixed;
+    background:url("../../assets/img/home.jpg");
+    width:100%;
+    height:0;
+    padding-bottom: 100%;
+    object-fit: cover;
+    /*overflow:hidden;*/
+    background-position: center center;
+    /*background-repeat: no-repeat;*/
+    /*-webkit-background-size:cover;*/
+    /*-moz-background-size:cover;*/
+    /*background-size:cover;*/
   }
 
 </style>
