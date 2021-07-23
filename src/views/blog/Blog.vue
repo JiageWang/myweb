@@ -1,30 +1,14 @@
 <template>
   <div id="blog">
-    <el-scrollbar>
-      <el-row class="my-blog-view" type="flex" gutter="20" justify="center">
-        <el-col :span="12">
-          <article-item :blog="blog"></article-item>
-          <article-item :blog="blog"></article-item>
-          <article-item :blog="blog"></article-item>
-          <article-item :blog="blog"></article-item>
-        </el-col>
-        <el-col :span="4">
-          <tag-block></tag-block>
-        </el-col>
-      </el-row>
-    </el-scrollbar>
-    <new-article/>
+    <article-view/>
+    <new-item :img="require('../../assets/img/new-article.svg')"/>
   </div>
-
-
-
-
 </template>
 
 <script>
+import ArticleView from "./article/ArticleView";
 import TagBlock from "components/TagBlock";
-import ArticleItem from "components/ArticleItem";
-import NewArticle from "components/NewArticle";
+import NewItem from "components/NewItem";
 
 export default {
   name: "Blog",
@@ -39,19 +23,12 @@ export default {
   },
   components: {
     TagBlock,
-    ArticleItem,
-    NewArticle
+    ArticleView,
+    NewItem
   },
 }
 </script>
 
 <style scoped>
-#blog{
-  background-color: aliceblue;
-}
-/*不显示横向滑动条*/
-#blog /deep/ .el-scrollbar__view {
-  overflow-x: hidden;
-}
 
 </style>

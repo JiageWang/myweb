@@ -1,21 +1,24 @@
 <template>
-  <div>
-    <el-scrollbar>
-      <album-list/>
-    </el-scrollbar>
+  <div id="life">
+      <album-view/>
+    <new-item :img="require('assets/img/new-album.svg')"/>
   </div>
 </template>
 
 <script>
-import ChinaMap from "components/common/map/ChinaMap";
-import AlbumItem from "components/AlbumItem";
-import AlbumList from "./AlbumList";
+// import ChinaMap from "components/common/map/ChinaMap";
+import AlbumView from "./album/AlbumView";
+import NewItem from "components/NewItem";
+
+
+
+
+
 export default {
   name: "Life",
   components:{
-    ChinaMap,
-    AlbumItem,
-    AlbumList
+    AlbumView,
+    NewItem
   }
 }
 </script>

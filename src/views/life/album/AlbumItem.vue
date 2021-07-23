@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <el-card class="album-item">
+  <div id="album-item">
+    <el-card>
       <h1 class="mr-auto">相册1</h1>
       <el-carousel indicator-position="outside">
         <el-carousel-item v-for="img in imgs" :key="img">
@@ -9,8 +9,7 @@
       </el-carousel>
       <div class="d-flex">
         <i class="el-icon-time"></i>：2019-03-24
-        <el-tag class="mr-auto" size="small">浙江</el-tag>
-        <el-button>查看全部</el-button>
+        <el-tag class="ml-auto" size="small">浙江</el-tag>
       </div>
     </el-card>
   </div>
@@ -18,7 +17,6 @@
 
 <script>
 export default {
-
   name: "AlbumItem",
   data() {
     return {
@@ -34,8 +32,5 @@ export default {
 </script>
 
 <style scoped>
-.album-item{
-  /*width: 30%;*/
-  height: 30%;
-}
+
 </style>

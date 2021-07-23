@@ -18,6 +18,7 @@
 
 <style>
 .menu{
+  /*导航栏始终固定在最上面*/
   top: 0;
   width: 100%;
   position: fixed;
@@ -25,10 +26,10 @@
 }
 .main{
   /*设置整个屏幕显示背景*/
-  height: 92%;
   top:60px;
   right:0;
   left:0;
   position:fixed;
+  height: calc(100% - 60px);
 }
 </style>
