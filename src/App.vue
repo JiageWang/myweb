@@ -1,11 +1,6 @@
 <template>
-
     <nav-menu class="menu"/>
     <router-view class="main"/>
-
-
-
-
 </template>
 
 <script>
@@ -29,12 +24,11 @@
   z-index: 1;
 }
 .main{
-  padding-top: 60px;
   /*设置整个屏幕显示背景*/
-  top:0;
+  height: 92%;
+  top:60px;
   right:0;
   left:0;
-  position:absolute;
-
+  position:fixed;
 }
 </style>

@@ -42,6 +42,7 @@ h1{
 }
 .article-item{
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .blog-abstract {
   margin-bottom: 10px;

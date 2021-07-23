@@ -25,15 +25,15 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter:blur(3px)
 }
 
 .home-main {
   width: 60%;
   height: 30%;
   margin: 0 auto;
-  background-color: antiquewhite;
+  background-color: rgba(213, 213, 213, 0.3);
   float: top;
+  box-shadow: 10px 10px 5px rgba(136, 136, 136, 0.3);
   /*定位*/
   position: absolute;
   top: 30%;

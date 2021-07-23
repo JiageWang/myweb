@@ -1,17 +1,19 @@
 <template>
-  <div>
-    <el-row class="my-blog-view" type="flex" gutter="20" justify="center">
-      <el-col :span="12">
-        <article-item :blog="blog"></article-item>
-                <article-item :blog="blog"></article-item>
-                <article-item :blog="blog"></article-item>
-                <article-item :blog="blog"></article-item>
-                <article-item :blog="blog"></article-item>
-      </el-col>
-      <el-col :span="4">
-        <tag-block></tag-block>
-      </el-col>
-    </el-row>
+  <div id="blog">
+    <el-scrollbar>
+      <el-row class="my-blog-view" type="flex" gutter="20" justify="center">
+        <el-col :span="12">
+          <article-item :blog="blog"></article-item>
+          <article-item :blog="blog"></article-item>
+          <article-item :blog="blog"></article-item>
+          <article-item :blog="blog"></article-item>
+        </el-col>
+        <el-col :span="4">
+          <tag-block></tag-block>
+        </el-col>
+      </el-row>
+    </el-scrollbar>
+    <new-article/>
   </div>
 
 
@@ -22,6 +24,7 @@
 <script>
 import TagBlock from "components/TagBlock";
 import ArticleItem from "components/ArticleItem";
+import NewArticle from "components/NewArticle";
 
 export default {
   name: "Blog",
@@ -37,10 +40,18 @@ export default {
   components: {
     TagBlock,
     ArticleItem,
+    NewArticle
   },
 }
 </script>
 
 <style scoped>
+#blog{
+  background-color: aliceblue;
+}
+/*不显示横向滑动条*/
+#blog /deep/ .el-scrollbar__view {
+  overflow-x: hidden;
+}
 
 </style>
